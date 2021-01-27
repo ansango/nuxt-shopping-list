@@ -2,11 +2,7 @@
   <div>
     <div>
       <ul class="articles">
-        <li
-          v-for="article in articles"
-          :key="article.id"
-          class="article flex justify-center"
-        >
+        <li v-for="article in articles" :key="article.id" class="article">
           <input
             :id="article.id"
             name="radio"
@@ -16,7 +12,8 @@
             @click="updateArticle(article.id)"
           />
 
-          <p>{{ article.product }}</p>
+          <p>{{ article.product.name }}</p>
+          <p>{{ article.product.type }}</p>
 
           <span @click="deleteArticle(article.id)">
             <svg

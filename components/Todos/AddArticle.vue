@@ -1,11 +1,18 @@
 <template>
   <form @submit.prevent="addArticle">
     <input
-      v-model="product"
+      v-model="product.name"
       type="text"
       class="form-input"
-      placeholder="Add a new article"
+      placeholder="Name"
     />
+    <input
+      v-model="product.type"
+      type="text"
+      class="form-input"
+      placeholder="Type"
+    />
+    <button type="submit">aa</button>
   </form>
 </template>
 
@@ -14,19 +21,20 @@ export default {
   name: 'AddArticle',
   data() {
     return {
-      product: '',
+      product: {
+        name: '',
+        type: '',
+      },
     }
-  },
-  computed: {
-    articles() {
-      return this.$store.getters.getArticles
-    },
   },
   methods: {
     addArticle() {
-      if (this.product !== '') {
+      if (this.product !== {}) {
         this.$store.dispatch('addArticle', this)
-        this.product = ''
+        this.product = {
+          name: '',
+          type: '',
+        }
       }
     },
   },
