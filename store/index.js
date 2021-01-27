@@ -4,6 +4,7 @@ export const state = () => ({
 
 export const getters = {
   getArticles: (state) => state.articles,
+  getNumberOfArticles: (state) => Object.keys(state.articles).length,
 }
 
 export const mutations = {
