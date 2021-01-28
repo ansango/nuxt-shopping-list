@@ -14,8 +14,6 @@ export const mutations = {
   ADD_ARTICLE(state, payload) {
     const newProduct = {
       id: new Date().getTime(),
-      name: payload.name,
-      type: payload.type,
       product: payload.product,
       completed: false,
     }

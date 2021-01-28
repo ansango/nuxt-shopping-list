@@ -2,7 +2,7 @@
   <div>
     <nav class="w-full flex justify-end text-gray-600 bg-transparent p-2">
       <a
-        class="flex flex-row items-center px-4 py-2 mt-2 bg-transparent focus:outline-none focus:shadow-outline cursor-pointer dark:text-gray-100"
+        class="flex flex-row items-center px-4 py-4 bg-transparent focus:outline-none focus:shadow-outline cursor-pointer dark:text-gray-100"
         @click="toggle"
       >
         <svg

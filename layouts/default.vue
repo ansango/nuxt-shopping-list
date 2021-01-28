@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-yellow dark:bg-gray-900">
+  <div class="h-screen">
     <nav-bar class="sticky top-0"></nav-bar>
-    <div>
+    <div class="my-0 mx-auto max-w-lg">
       <Nuxt />
     </div>
   </div>
