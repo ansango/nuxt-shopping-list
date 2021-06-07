@@ -3,15 +3,15 @@
     <li
       v-for="article in articles"
       :key="article.id"
-      class="article flex items-center w-full rounded-lg py-1 dark:bg-gray-800 dark:text-blue-200"
+      class="article flex items-center w-full rounded-lg px-2 py-1 mb-1 dark:bg-gray-800 dark:text-blue-200"
     >
-      <div class="w-2/3 flex items-center text-gray-700">
+      <div class="w-2/3 flex items-center">
         <input
           :id="article.id"
           name="checkbox"
           type="checkbox"
           :checked="article.completed"
-          class="form-checkbox"
+          class="form-checkbox dark:bg-gray-700 dark:border-gray-700"
           @click="updateArticle(article.id)"
         />
         <div class="flex" :class="{ checked: article.completed === true }">
@@ -24,7 +24,10 @@
         </div>
       </div>
       <div class="w-1/3 flex justify-end items-center">
-        <button class="text-gray-700 mr-2" @click="deleteArticle(article.id)">
+        <button
+          class="dark:text-gray-600 mr-2"
+          @click="deleteArticle(article.id)"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

@@ -5,7 +5,7 @@
         v-model="product.name"
         type="text"
         placeholder="Product"
-        class="form-input mt-1 block w-full placeholder-gray-600 text-gray-600"
+        class="form-input mt-1 block w-full placeholder-gray-600 dark:bg-gray-800 dark:border-gray-900"
         :class="{
           'placeholder-red-500': errors.length > 0,
           'border-red-500': errors.length > 0,
@@ -23,7 +23,7 @@
     <div class="my-2">
       <select
         v-model="product.type"
-        class="form-input text-gray-600 mt-1 block w-full"
+        class="form-input text-gray-600 dark:bg-gray-800 mt-1 block w-full dark:border-gray-900"
         :class="{
           'text-red-500': errors.length > 0,
           'border-red-500': errors.length > 0,
@@ -44,7 +44,7 @@
     <div class="wrapper-btn flex justify-end">
       <button
         type="submit"
-        class="mt-4 bg-purple-200 text-purple-800 font-medium text-violet-700 px-6 py-2 rounded-lg"
+        class="mt-4 bg-purple-200 text-purple-800 dark:bg-purple-800 dark:text-purple-300 font-medium text-violet-700 px-6 py-2 rounded-lg"
       >
         Create
       </button>

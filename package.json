@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.4",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.15.6"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.3",

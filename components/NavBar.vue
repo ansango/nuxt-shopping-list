@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="w-full flex justify-end text-gray-600 bg-transparent p-2">
+    <nav class="w-full flex justify-end bg-transparent p-2">
       <a
         class="flex flex-row items-center px-4 py-4 bg-transparent focus:outline-none focus:shadow-outline cursor-pointer dark:text-gray-100"
         @click="toggle"

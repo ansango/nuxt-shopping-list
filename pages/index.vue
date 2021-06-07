@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col w-full">
     <div class="mx-2 flex justify-between items-center">
-      <h1 class="title mx-2 text-gray-700">Shopping List</h1>
+      <h1 class="title mx-2">Shopping List</h1>
       <span
-        class="flex items-center cursor-pointer m-1 p-2 rounded-full bg-blue-200 text-blue-800"
+        class="flex items-center cursor-pointer m-1 p-2 rounded-full bg-blue-200 text-blue-800 dark:bg-blue-900 dark:text-blue-300"
         @click="displayAddForm"
       >
         <div v-if="!displayForm">
@@ -42,10 +42,10 @@
       v-if="numberArticles > 0"
       class="mx-2 flex justify-between items-center"
     >
-      <h2 class="mx-2 text-gray-700">Articles in list</h2>
+      <h2 class="mx-2">Articles in list</h2>
 
       <span
-        class="flex items-center m-1 my-1 rounded-full bg-green-200 px-2 text-sm py-2 font-medium text-green-800"
+        class="flex items-center m-1 my-1 rounded-full bg-green-200 px-2 text-sm py-2 font-medium text-green-800 dark:bg-green-900 dark:text-green-300"
       >
         <p class="w-5 y-4 text-center">{{ numberArticles }}</p>
       </span>
@@ -55,7 +55,7 @@
     <div class="flex flex-col items-center mx-4">
       <span
         v-if="displayForm"
-        class="p-2 bg-gray-200 rounded-full text-gray-600 cursor-pointer"
+        class="p-2 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-500 cursor-pointer"
         @click="displayAddForm"
       >
         <svg
