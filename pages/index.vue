@@ -55,7 +55,7 @@
     <div class="flex flex-col items-center mx-4">
       <span
         v-if="displayForm"
-        class="p-2 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-500 cursor-pointer"
+        class="p-2 bg-gray-200 rounded-full dark:bg-gray-800 dark:text-gray-500 cursor-pointer"
         @click="displayAddForm"
       >
         <svg
